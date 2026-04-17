@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти | Андрій Глазунов</title>
+  <meta name="description" content="Контакти та форма запису на консультацію адвоката Андрія Глазунова.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/znachok.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/znachok.png">
+</head>
+<body class="theme-day">
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html#top" class="brand">Адвокат<br><span>Андрій Глазунов</span></a>
+      <nav class="menu" id="site-menu">
+        <a href="services.html">Послуги</a>
+        <a href="directions.html">Напрями</a>
+        <a href="about.html">Про мене</a>
+        <a href="blog.html">Блог</a>
+        <a href="court-decisions.html">Судові рішення</a>
+        <a href="process.html">Як працюю</a>
+        <a href="contact.html" class="menu-active" aria-current="page">Контакти</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-menu">⋯</button>
+      <div class="nav-actions">
+        <button class="btn btn-toggle" id="theme-toggle" type="button" aria-pressed="false" title="Перемкнути тему">Ніч</button>
+        <a class="btn btn-light" href="contact.html">Записатися</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="services-main" id="top">
+    <section class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Зв'язок</p>
+          <h1 class="services-title">Запис на консультацію</h1>
+          <p class="services-lead">Опишіть коротко вашу ситуацію. Після отримання заявки повідомлю, чи можу взяти справу в роботу і які документи важливо підготувати.</p>
+          <ul class="contacts">
+            <li>Телефон: <a href="tel:+380770170707">+38 (077) 017-07-07</a></li>
+            <li>Email: <a href="mailto:lawyer@example.ua">lawyer@example.ua</a></li>
+            <li>Місто: Київ, Україна</li>
+          </ul>
+        </div>
+        <form class="form" id="consultation-form">
+          <label>
+            Ім'я
+            <input type="text" name="name" required placeholder="Ваше ім'я">
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" required autocomplete="tel" inputmode="numeric" placeholder="7717070707">
+          </label>
+          <label>
+            Коротко про ситуацію
+            <textarea name="message" rows="4" placeholder="Наприклад: відмова/затримка пенсії, перерахунок, податкове питання для ФОП"></textarea>
+          </label>
+          <div class="hp-field" aria-hidden="true">
+            <label>
+              Ваш сайт
+              <input type="text" name="website" tabindex="-1" autocomplete="off" placeholder="Залиште поле порожнім">
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Надіслати заявку</button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Андрій Глазунов. Всі права захищено.</p>
+      <a href="#top">Нагору</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
